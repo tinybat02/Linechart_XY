@@ -55605,7 +55605,7 @@ function (_super) {
         left: 60
       },
       xScale: {
-        type: 'point'
+        type: 'linear'
       },
       yScale: {
         type: 'linear',
@@ -55617,15 +55617,15 @@ function (_super) {
       yFormat: " >-.3f",
       axisTop: null,
       axisRight: null,
-      axisBottom: {
-        orient: 'bottom',
-        tickSize: 5,
-        tickPadding: 5,
-        tickRotation: 0,
-        // legend: 'transportation',
-        legendOffset: 36,
-        legendPosition: 'middle'
-      },
+      // axisBottom={{
+      //   orient: 'bottom',
+      //   tickSize: 5,
+      //   tickPadding: 5,
+      //   tickRotation: 0,
+      //   // legend: 'transportation',
+      //   legendOffset: 36,
+      //   legendPosition: 'middle',
+      // }}
       axisLeft: {
         orient: 'left',
         tickSize: 5,

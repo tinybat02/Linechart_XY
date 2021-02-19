@@ -50,20 +50,21 @@ export class MainPanel extends PureComponent<Props, State> {
       <ResponsiveLine
         data={[{ id: 'vacuum', data }]}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-        xScale={{ type: 'point' }}
+        xScale={{ type: 'linear' }}
         yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: true, reverse: false }}
         yFormat=" >-.3f"
         axisTop={null}
         axisRight={null}
-        axisBottom={{
-          orient: 'bottom',
-          tickSize: 5,
-          tickPadding: 5,
-          tickRotation: 0,
-          // legend: 'transportation',
-          legendOffset: 36,
-          legendPosition: 'middle',
-        }}
+        // axisBottom={{
+
+        //   orient: 'bottom',
+        //   tickSize: 5,
+        //   tickPadding: 5,
+        //   tickRotation: 0,
+        //   // legend: 'transportation',
+        //   legendOffset: 36,
+        //   legendPosition: 'middle',
+        // }}
         axisLeft={{
           orient: 'left',
           tickSize: 5,

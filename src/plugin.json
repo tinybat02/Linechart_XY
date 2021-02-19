@@ -1,0 +1,21 @@
+{
+  "type": "panel",
+  "name": "Line XY",
+  "id": "id-es-linechart-xy",
+  "dataFormats": ["table"],
+  "info": {
+    "description": "Linechart XY",
+    "author": {
+      "name": "Nam Le"
+    },
+    "keywords": [],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "6.3.x",
+    "plugins": []
+  }
+}

@@ -6,7 +6,7 @@ import { processData } from './util/process';
 
 interface Props extends PanelProps<PanelOptions> {}
 interface State {
-  data: Array<{ x: number; y: number }>;
+  data: Array<{ id: string; data: Array<{ x: number; y: number }> }>;
 }
 
 export class MainPanel extends PureComponent<Props, State> {
@@ -48,7 +48,7 @@ export class MainPanel extends PureComponent<Props, State> {
 
     return (
       <ResponsiveLine
-        data={[{ id: 'vacuum', data }]}
+        data={data}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
         xScale={{ type: 'linear' }}
         yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: true, reverse: false }}

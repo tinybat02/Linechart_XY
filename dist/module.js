@@ -55594,10 +55594,7 @@ function (_super) {
     var data = this.state.data;
     if (data.length == 0) return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "No Data");
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_nivo_line__WEBPACK_IMPORTED_MODULE_2__["ResponsiveLine"], {
-      data: [{
-        id: 'vacuum',
-        data: data
-      }],
+      data: data,
       margin: {
         top: 50,
         right: 110,
@@ -55726,13 +55723,25 @@ var defaults = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "processData", function() { return processData; });
 var processData = function processData(buffer) {
-  var data = buffer.buffer[0].x.map(function (x_value, i) {
+  var data1 = buffer.buffer[0].x1.map(function (x_value, i) {
     return {
       x: x_value,
-      y: buffer.buffer[0].y[i]
+      y: buffer.buffer[0].y1[i]
     };
   });
-  return data;
+  var data2 = buffer.buffer[0].x2.map(function (x_value, i) {
+    return {
+      x: x_value,
+      y: buffer.buffer[0].y2[i]
+    };
+  });
+  return [{
+    id: 'line_1',
+    data: data1
+  }, {
+    id: 'line_2',
+    data: data2
+  }];
 };
 
 /***/ }),

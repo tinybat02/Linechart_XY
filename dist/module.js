@@ -55732,10 +55732,10 @@ var processData = function processData(buffer) {
     };
   });
   return [{
-    id: 'line_1',
+    id: 'Trilateration',
     data: data1
   }, {
-    id: 'line_2',
+    id: 'Mlearning',
     data: data2
   }];
 };

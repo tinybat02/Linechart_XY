@@ -55605,11 +55605,7 @@ function (_super) {
         type: 'linear'
       },
       yScale: {
-        type: 'linear',
-        min: 'auto',
-        max: 'auto',
-        stacked: true,
-        reverse: false
+        type: 'linear'
       },
       yFormat: " >-.3f",
       axisTop: null,
